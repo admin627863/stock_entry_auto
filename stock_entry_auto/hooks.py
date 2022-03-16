@@ -95,6 +95,15 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
+doc_events = {
+	"Stock Entry": {
+        "on_submit": "stock_entry_auto.stock_entry_auto.doctype.stock_entry.stock_entry.on_stock_entry_after_submit",
+    },
+	"Purchase Receipt": {
+        "on_submit": "stock_entry_auto.stock_entry_auto.doctype.purchase_receipt.purchase_receipt.on_purchase_receipt_after_submit",
+    }
+}
+
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
@@ -134,6 +143,9 @@ app_license = "MIT"
 #
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "stock_entry_auto.event.get_events"
+# }
+# override_whitelisted_methods = {
+# 	"frappe.desk.search.search_link": "stock_entry_auto.desk.search.search_link"
 # }
 #
 # each overriding function accepts a `data` argument;

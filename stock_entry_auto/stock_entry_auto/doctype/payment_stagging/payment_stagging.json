@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-02-03 16:09:10.836417",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "payment_name",
+  "tender_amt",
+  "op_crncy",
+  "payment_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "payment_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Payment name"
+  },
+  {
+   "fieldname": "tender_amt",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Tender amount"
+  },
+  {
+   "fieldname": "op_crncy",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Op currency"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Payment status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-02-03 16:09:40.476967",
+ "modified_by": "Administrator",
+ "module": "Stock Entry Auto",
+ "name": "Payment stagging",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

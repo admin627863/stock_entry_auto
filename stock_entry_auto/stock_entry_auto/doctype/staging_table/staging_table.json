@@ -1,0 +1,197 @@
+{
+ "actions": [],
+ "autoname": "field:order_id",
+ "creation": "2022-01-14 17:57:48.312068",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_id",
+  "customer",
+  "mobile_number",
+  "email",
+  "posting_date",
+  "cost_center",
+  "tax_amount",
+  "column_break_4",
+  "warehouse",
+  "additional_discount_percentage",
+  "discount_amount",
+  "payment_name",
+  "invoice_amount",
+  "packing_charges_section",
+  "charge",
+  "cgst",
+  "sgst",
+  "service_charges_section",
+  "service_charge",
+  "service_cgst",
+  "service_sgst",
+  "section_break_8",
+  "items",
+  "payment_detail",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Staging Table",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "additional_discount_percentage",
+   "fieldtype": "Float",
+   "label": "Additional Discount Percentage"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Additional Discount Amount"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Staging item",
+   "options": "Staging item"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Data",
+   "label": "Order id",
+   "unique": 1
+  },
+  {
+   "fieldname": "payment_name",
+   "fieldtype": "Data",
+   "label": "Payment name"
+  },
+  {
+   "fieldname": "payment_detail",
+   "fieldtype": "Table",
+   "label": "Payment detail",
+   "options": "Payment stagging"
+  },
+  {
+   "fieldname": "invoice_amount",
+   "fieldtype": "Currency",
+   "label": "Invoice amount"
+  },
+  {
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "label": "Tax amount"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email id"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "packing_charges_section",
+   "fieldtype": "Section Break",
+   "label": "Packing Charges"
+  },
+  {
+   "fieldname": "charge",
+   "fieldtype": "Currency",
+   "label": "Packing Charge"
+  },
+  {
+   "fieldname": "cgst",
+   "fieldtype": "Currency",
+   "label": "Packing Cgst"
+  },
+  {
+   "fieldname": "sgst",
+   "fieldtype": "Currency",
+   "label": "Packing Sgst"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "service_charges_section",
+   "fieldtype": "Section Break",
+   "label": "Service Charges"
+  },
+  {
+   "fieldname": "service_charge",
+   "fieldtype": "Currency",
+   "label": "Service Charge"
+  },
+  {
+   "fieldname": "service_cgst",
+   "fieldtype": "Currency",
+   "label": "Service Cgst"
+  },
+  {
+   "fieldname": "service_sgst",
+   "fieldtype": "Currency",
+   "label": "Service Sgst"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-02-21 11:01:45.485389",
+ "modified_by": "Administrator",
+ "module": "Stock Entry Auto",
+ "name": "Staging Table",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
