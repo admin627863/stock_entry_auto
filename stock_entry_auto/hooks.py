@@ -101,6 +101,9 @@ doc_events = {
     },
 	"Purchase Receipt": {
         "on_submit": "stock_entry_auto.stock_entry_auto.doctype.purchase_receipt.purchase_receipt.on_purchase_receipt_after_submit",
+    },
+	"Sales Invoice": {
+        "on_submit": "stock_entry_auto.stock_entry_auto.doctype.sales_invoice_payment.sales_invoice.on_sales_invoice_payment_after_submit",
     }
 }
 
@@ -190,4 +193,5 @@ user_data_fields = [
 # auth_hooks = [
 # 	"stock_entry_auto.auth.validate"
 # ]
+
 
